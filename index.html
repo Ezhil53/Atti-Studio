@@ -1,0 +1,409 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> NEXUS — Creative Agency </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css"/>
+  </head>
+  <body>
+    <!-- Custom Cursor -->
+    <div id="cursor"></div>
+    <div id="cursor-ring"></div>
+
+    <!-- ── NAVBAR ── -->
+    <nav id="navbar" class="nav-bg">
+      <a href="#home" class="nav-logo">NEX <span>US</span></a>
+
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#works">Works</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#contact" class="nav-cta">Start a Project</a></li>
+      </ul>
+
+      <button class="hamburger" onclick="toggleMenu()" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+
+    <!-- ── HERO ── -->
+    <section id="home">
+      <div class="hero-glow"></div>
+      <div class="hero-glow2"></div>
+      <div class="hero-eyebrow">Creative Digital Agency</div>
+      <h1 class="hero-headline">
+        <div class="line"><span>We Make</span></div>
+        <div class="line">
+          <span>Brands <em>Move.</em></span>
+        </div>
+        <div class="line"><span>& Convert.</span></div>
+      </h1>
+      <p class="hero-sub">
+        From AI-powered ad videos to stunning web experiences — we craft digital
+        assets that stop the scroll and drive results.
+      </p>
+      <div class="hero-actions">
+        <a href="#works" class="btn-primary">See Our Work →</a>
+        <a href="#contact" class="btn-ghost">Get a Free Quote <span>→</span></a>
+      </div>
+      <div class="hero-stats">
+        <div>
+          <div class="hero-stat-num">80<span>+</span></div>
+          <div class="hero-stat-label">Projects Delivered</div>
+        </div>
+        <div>
+          <div class="hero-stat-num">50<span>+</span></div>
+          <div class="hero-stat-label">Happy Clients</div>
+        </div>
+        <div>
+          <div class="hero-stat-num">5<span>★</span></div>
+          <div class="hero-stat-label">Average Rating</div>
+        </div>
+        <div>
+          <div class="hero-stat-num">3<span>yrs</span></div>
+          <div class="hero-stat-label">In the Game</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── SERVICES ── -->
+    <section id="services">
+      <div class="services-header">
+        <div>
+          <div class="section-label reveal">What We Do</div>
+          <h2 class="section-title reveal reveal-d1">
+            Services that<br />drive growth
+          </h2>
+        </div>
+        <p class="services-sub reveal">
+          Everything your brand needs to dominate online — under one roof,
+          crafted by passionate creators.
+        </p>
+      </div>
+      <div class="services-grid">
+        <div class="service-card reveal">
+          <div class="service-num">01</div>
+          <div class="service-icon">🤖</div>
+          <div class="service-name">AI Ad Video Creation</div>
+          <p class="service-desc">
+            Hyper-personalized, scroll-stopping ad videos powered by the latest
+            AI models. From script to final cut, we handle it all.
+          </p>
+          <div class="service-tags">
+            <span class="service-tag">RunwayML</span>
+            <span class="service-tag">Sora</span>
+            <span class="service-tag">ElevenLabs</span>
+          </div>
+        </div>
+        <div class="service-card reveal reveal-d1">
+          <div class="service-num">02</div>
+          <div class="service-icon">🎬</div>
+          <div class="service-name">Video Editing</div>
+          <p class="service-desc">
+            Cinematic edits, reels, short-form content, and long-form video
+            production. We transform raw footage into binge-worthy content.
+          </p>
+          <div class="service-tags">
+            <span class="service-tag">Premiere Pro</span>
+            <span class="service-tag">After Effects</span>
+            <span class="service-tag">DaVinci</span>
+          </div>
+        </div>
+        <div class="service-card reveal reveal-d2">
+          <div class="service-num">03</div>
+          <div class="service-icon">🎨</div>
+          <div class="service-name">Design & Branding</div>
+          <p class="service-desc">
+            Logos, UI/UX systems, posters, social graphics. We build visual
+            identities that are impossible to forget.
+          </p>
+          <div class="service-tags">
+            <span class="service-tag">Figma</span>
+            <span class="service-tag">Illustrator</span>
+            <span class="service-tag">Photoshop</span>
+          </div>
+        </div>
+        <div class="service-card reveal reveal-d1">
+          <div class="service-num">04</div>
+          <div class="service-icon">💻</div>
+          <div class="service-name">Web Development</div>
+          <p class="service-desc">
+            Fast, responsive, and beautifully engineered websites and web apps
+            that turn visitors into customers.
+          </p>
+          <div class="service-tags">
+            <span class="service-tag">React</span>
+            <span class="service-tag">Next.js</span>
+            <span class="service-tag">Tailwind</span>
+          </div>
+        </div>
+        <div class="service-card reveal reveal-d2">
+          <div class="service-num">05</div>
+          <div class="service-icon">📈</div>
+          <div class="service-name">SEO & Growth</div>
+          <p class="service-desc">
+            Data-driven strategies to rank higher, get found faster, and grow
+            organic traffic that actually converts.
+          </p>
+          <div class="service-tags">
+            <span class="service-tag">Ahrefs</span>
+            <span class="service-tag">SEMrush</span>
+            <span class="service-tag">GSC</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── TOOLS MARQUEE ── -->
+    <div class="marquee-section">
+      <p class="marquee-label">Tools We Master</p>
+      <div class="marquee-fade-l"></div>
+      <div class="marquee-fade-r"></div>
+      <!-- Row 1 -->
+      <div class="marquee-track">
+        <div class="marquee-inner" id="row1">
+          <!-- pills duplicated inside JS for seamless loop -->
+        </div>
+      </div>
+      <!-- Row 2 -->
+      <div class="marquee-track">
+        <div class="marquee-inner2" id="row2"></div>
+      </div>
+    </div>
+
+    <!-- ── ABOUT ── -->
+    <section id="about">
+      <div class="about-grid">
+        
+        <div>
+          <!-- <div class="about-badge reveal">We're Live & Growing</div>-->
+          <div class="section-label reveal">About Us</div>
+          <h2 class="section-title reveal reveal-d1">
+            Friends who turned<br />passion into craft
+          </h2>
+          <p class="about-text reveal reveal-d2">
+            We're a <strong>group of friends</strong> who got tired of watching
+            great ideas fail from poor execution. So we built NEXUS — a creative
+            agency that
+            <strong>blends storytelling, design, and technology</strong> into
+            work that actually moves people.
+          </p>
+          <!-- <p class="about-text reveal reveal-d2">
+            From our first logo project to launching full AI-powered video
+            campaigns, we've stayed true to one thing:
+            <strong>making stuff we're genuinely proud of.</strong>
+          </p> -->
+          <!-- <div class="founders reveal reveal-d3">
+            <div class="founder">
+              <div class="founder-avatar">AK</div>
+              <div>
+                <div class="founder-name">Arjun Kumar</div>
+                <div class="founder-role">Creative Director & Video Lead</div>
+              </div>
+            </div>
+            <div class="founder">
+              <div class="founder-avatar">PS</div>
+              <div>
+                <div class="founder-name">Priya Sharma</div>
+                <div class="founder-role">Design & Brand Strategist</div>
+              </div>
+            </div>
+            <div class="founder">
+              <div class="founder-avatar">RV</div>
+              <div>
+                <div class="founder-name">Rohan Verma</div>
+                <div class="founder-role">Web Dev & SEO Lead</div>
+              </div>
+            </div>
+          </div> -->
+        </div>
+
+        <div class="about-visual reveal">
+          <div class="about-card">
+            <div class="about-card-num" data-count="80">0</div>
+            <div class="about-card-label">Projects Completed</div>
+          </div>
+          <div class="about-card">
+            <div class="about-card-num" data-count="50">0</div>
+            <div class="about-card-label">Happy Clients</div>
+          </div>
+          <div class="about-card">
+            <div class="about-card-num" data-count="3">0</div>
+            <div class="about-card-label">Years of Experience</div>
+          </div>
+          <div class="about-card">
+            <div class="about-card-num" data-count="12">0</div>
+            <div class="about-card-label">Team Members</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── OUR WORKS ── -->
+    <section id="works">
+      <div class="works-header">
+        <div>
+          <div class="section-label reveal">Portfolio</div>
+          <h2 class="section-title reveal reveal-d1">
+            Work we're<br />proud of
+          </h2>
+        </div>
+        <div class="filter-tabs reveal">
+          <button class="filter-tab active" onclick="filterWorks('all', this)">
+            All
+          </button>
+          <button class="filter-tab" onclick="filterWorks('video', this)">
+            Video
+          </button>
+          <button class="filter-tab" onclick="filterWorks('design', this)">
+            Design
+          </button>
+          <button class="filter-tab" onclick="filterWorks('web', this)">
+            Web Dev
+          </button>
+          <button class="filter-tab" onclick="filterWorks('seo', this)">
+            SEO
+          </button>
+        </div>
+      </div>
+      <div class="works-grid" id="worksGrid"></div>
+    </section>
+
+    <!-- ── CONTACT ── -->
+    <section id="contact">
+      <div class="contact-grid">
+        <div>
+          <div class="section-label reveal">Get in Touch</div>
+          <h2 class="contact-info-title reveal reveal-d1">
+            Let's build<br />something great
+          </h2>
+          <p class="contact-info-desc reveal reveal-d2">
+            Got a project in mind? Tell us what you need and we'll get back to
+            you within 24 hours. No commitment, just a conversation.
+          </p>
+          
+        </div>
+
+        <div class="contact-detail reveal reveal-d3">
+            <div class="contact-item">
+              <div class="contact-item-icon">✉️</div>
+              <div>
+                <div class="contact-item-label">Email</div>
+                <div class="contact-item-val">hello@nexusagency.in</div>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-item-icon">📱</div>
+              <div>
+                <div class="contact-item-label">WhatsApp</div>
+                <div class="contact-item-val">+91 98765 43210</div>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-item-icon">📍</div>
+              <div>
+                <div class="contact-item-label">Location</div>
+                <div class="contact-item-val">Chennai, Tamil Nadu 🇮🇳</div>
+              </div>
+            </div>
+          </div>
+        <!-- <div class="reveal reveal-d2">
+          <form class="contact-form" onsubmit="handleSubmit(event)">
+            <div class="form-row">
+              <div class="form-group">
+                <label>Your Name</label>
+                <input type="text" placeholder="Ravi Shankar" required />
+              </div>
+              <div class="form-group">
+                <label>Email</label>
+                <input type="email" placeholder="ravi@brand.com" required />
+              </div>
+            </div>
+            <div class="form-group">
+              <label>Service Needed</label>
+              <select>
+                <option value="">Select a service...</option>
+                <option>AI Ad Video Creation</option>
+                <option>Video Editing</option>
+                <option>Design & Branding</option>
+                <option>Web Development</option>
+                <option>SEO & Growth</option>
+                <option>Multiple Services</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label>Tell Us About Your Project</label>
+              <textarea
+                placeholder="We're launching a new product and need an ad video + landing page..."
+              ></textarea>
+            </div>
+            <button type="submit" class="submit-btn">Send Message →</button>
+          </form>
+        </div> -->
+      </div>
+    </section>
+
+    <!-- ── FOOTER ── -->
+    <footer>
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="footer-logo">NEX<span>US</span></div>
+          <p class="footer-tagline">
+            A creative agency built by friends, powered by passion, and driven
+            by results.
+          </p>
+        </div>
+        <div class="footer-links-col">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="#services">AI Ad Videos</a></li>
+            <li><a href="#services">Video Editing</a></li>
+            <li><a href="#services">Design & Branding</a></li>
+            <li><a href="#services">Web Development</a></li>
+            <li><a href="#services">SEO & Growth</a></li>
+          </ul>
+        </div>
+        <div class="footer-links-col">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#works">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-links-col">
+          <h4>Follow Us</h4>
+          <ul>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">LinkedIn</a></li>
+            <li><a href="#">Twitter / X</a></li>
+            <li><a href="#">YouTube</a></li>
+            <li><a href="#">Behance</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="footer-copy">
+          © 2025 NEXUS Creative Agency. Made with ❤️ in Chennai.
+        </p>
+        <div class="footer-socials">
+          <a href="#" class="footer-social">📸</a>
+          <a href="#" class="footer-social">💼</a>
+          <a href="#" class="footer-social">🐦</a>
+          <a href="#" class="footer-social">▶️</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js" ></script>
+  </body>
+</html>
